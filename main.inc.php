@@ -51,6 +51,8 @@ add_event_handler('get_admin_plugin_menu_links', 'oidc_admin_link');
 add_event_handler('delete_user', 'oidc_delete_user');
 add_event_handler('ws_add_methods', 'oidc_api');
 
+load_language('plugin.lang', OIDC_PATH);
+
 /// Utility methods
 /**
  * Generate a random password
